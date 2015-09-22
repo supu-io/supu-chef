@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: supu-io
+# Cookbook Name:: supu-chef
 # Recipe:: default
 #
 # Copyright (C) 2015 Adrià Cidre <adria.cidre@gmail.com>
@@ -18,4 +18,8 @@
 #
 
 # Install/configure something here
+include_recipe 'apt'
+include_recipe 'golang'
+package 'redis-server'
+
 log "replace this with a meaningful resource"

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: supu-io
+# Cookbook Name:: supu-chef
 # Attributes:: default
 #
 # Copyright (C) 2015 Adrià Cidre <adria.cidre@gmail.com>
@@ -18,3 +18,6 @@
 #
 
 # Set meaningful node attributes here
+
+include_attribute "supu-chef::go"
+

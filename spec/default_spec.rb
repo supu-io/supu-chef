@@ -1,7 +1,7 @@
 require "spec_helper"
 
 # Write unit tests with ChefSpec - https://github.com/sethvargo/chefspec#readme
-describe "supu-io::default" do
+describe "supu-chef::default" do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
   it "logs a sample message" do

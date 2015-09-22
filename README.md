@@ -22,7 +22,7 @@ Attributes
 Recipes
 -------
 
-### supu-io::default
+### supu-chef::default
 
 *Explain what the recipe does here*
 
