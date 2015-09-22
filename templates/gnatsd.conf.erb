@@ -1,0 +1,12 @@
+description "gnatsd"
+
+start on runlevel [2345]
+stop on runlevel [016]
+
+setuid nats
+setgid nats
+
+chdir /opt/gnatsd
+
+respawn # Will restart the app if it dies
+exec ./gnatsd

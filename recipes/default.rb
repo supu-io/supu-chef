@@ -21,5 +21,6 @@
 include_recipe 'apt'
 include_recipe 'golang'
 package 'redis-server'
+include_recipe 'supu-chef::gnatsd'
 
 log "replace this with a meaningful resource"
