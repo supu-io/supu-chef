@@ -5,7 +5,7 @@ directory '/opt/supu-io/' do
   action :create
 end
 
-['api', 'core'].each do |repo|
+['api', 'core', 'source-control', 'issue-tracker'].each do |repo|
   dir = "/opt/supu-io/#{repo}"
   git dir do
     user 'vagrant'
