@@ -1,7 +1,7 @@
 supu.io Cookbook
 =================
 
-This is a testable cookbook designed to support supu.io ecosystem.
+This is a testable cookbook designed to support supu.io ecosystem. 
 
 Requirements
 ------------

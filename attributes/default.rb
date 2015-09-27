@@ -2,7 +2,7 @@
 # Cookbook Name:: supu-chef
 # Attributes:: default
 #
-# Copyright (C) 2015 Adrià Cidre <adria.cidre@gmail.com>
+# Copyright (C) 2015 Adria Cidre <adria.cidre@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,5 +19,4 @@
 
 # Set meaningful node attributes here
 
-include_attribute "supu-chef::go"
-
+include_attribute 'supu-chef::go'
