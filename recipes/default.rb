@@ -2,7 +2,7 @@
 # Cookbook Name:: supu-chef
 # Recipe:: default
 #
-# Copyright (C) 2015 Adrià Cidre <adria.cidre@gmail.com>
+# Copyright (C) 2015 Adria Cidre <adria.cidre@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ include_recipe 'golang'
 package 'redis-server'
 
 include_recipe 'supu-chef::ssh'
-include_recipe 'supu-chef::gnatsd'
-include_recipe 'supu-chef::supu'
+include_recipe 'supu-chef::gnatsd' # ~FC033
+include_recipe 'supu-chef::supu' # ~FC033
 
-log "replace this with a meaningful resource"
+log 'replace this with a meaningful resource'

@@ -5,7 +5,7 @@ directory '/opt/supu-io/' do
   action :create
 end
 
-['api', 'core', 'source-control', 'issue-tracker'].each do |repo|
+%w(api core source-control issue-tracker).each do |repo|
   dir = "/opt/supu-io/#{repo}"
   git dir do
     user 'vagrant'
@@ -21,7 +21,7 @@ end
   end
 
   template "/etc/init/#{repo}.conf" do
-    source "supu-service.conf.erb"
+    source "supu.conf.erb"
     owner 'root'
     group 'root'
     mode '0755'
